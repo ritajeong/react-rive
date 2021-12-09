@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import Rive from "rive-react";
 import HamburgerTime from "./hamburger-time.riv";
 
