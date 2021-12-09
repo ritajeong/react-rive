@@ -4,12 +4,12 @@ function App() {
   const { rive, RiveComponent } = useRive({
     src: "hamburger-time.riv",
     animations: "Hamburger to X",
-    autoplay: true,
+    autoplay: false,
   });
 
   return (
     <div>
-      <RiveComponent/>
+      <RiveComponent onMouseOver={() => rive.play()} />
     </div>
   );
 }
