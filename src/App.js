@@ -1,10 +1,15 @@
-import Rive from "rive-react";
-import HamburgerTime from "./hamburger-time.riv";
+import { useRive } from "rive-react";
 
 function App() {
+  const { rive, RiveComponent } = useRive({
+    src: "hamburger-time.riv",
+    animations: "Hamburger to X",
+    autoplay: true,
+  });
+
   return (
     <div>
-      <Rive src={HamburgerTime} animations="Hamburger to X"/>
+      <RiveComponent/>
     </div>
   );
 }
