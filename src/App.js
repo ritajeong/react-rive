@@ -4,7 +4,8 @@ function App() {
 
   return (
     <div>
-      <RiveHamburger/>
+      <RiveHamburger className="Big" />
+      <RiveHamburger className="Small"/>
     </div>
   );
 }

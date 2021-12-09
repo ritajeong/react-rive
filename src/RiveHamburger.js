@@ -1,6 +1,6 @@
 import { useRive, useStateMachineInput } from "rive-react";
-
-export default function RiveHamburger() {
+import "./RiveHamburger.css"
+export default function RiveHamburger({className}) {
   const STATE_MACHINE_NAME = "Basic State Machine";
   const INPUT_NAME = "Switch";
 
@@ -16,6 +16,6 @@ export default function RiveHamburger() {
     INPUT_NAME
   )
 
-  return <RiveComponent onClick={()=> onClickInput.fire()}/>;
+  return <RiveComponent className={className} onClick={()=> onClickInput.fire()}/>;
 
 }
